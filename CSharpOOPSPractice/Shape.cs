@@ -9,10 +9,7 @@ namespace CSharpOOPSPractice
 {
     internal class Shape
     {
-        public virtual void CalculateArea(double dimension1, double _ = 0)
-        {
-
-        }
+        public virtual void CalculateArea(){}       
         public double GetUserInput(string input)
         {
 
@@ -33,16 +30,19 @@ namespace CSharpOOPSPractice
     }
     internal class Circle : Shape
     {
-        public override void CalculateArea(double radius, double _ = 0)
+        public override void CalculateArea()
         {
+            double radius = GetUserInput("For what radius you want to calculate the area of circle?");
             double Area = Math.PI * radius * radius;
             Console.WriteLine($"Area of the circle is: {Math.Round(Area, 3)}");
         }
     }
     internal class Rectangle : Shape
     {
-        public override void CalculateArea(double length, double breadth)
+        public override void CalculateArea()
         {
+            double length = GetUserInput("Enter length for which you want to calculate the area of Rectangle?");
+            double breadth = GetUserInput("Enter breadth for which you want to calculate the area of Rectangle?");
             double Area = length * breadth;
             Console.WriteLine($"Area of the rectangle is: {Math.Round(Area, 3)}");
         }

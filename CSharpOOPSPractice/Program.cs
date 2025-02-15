@@ -2,7 +2,7 @@
 
 #region "Challenge1: Implement Inheritance"
 
-List<Shape> shapes = new List<Shape>  //reducing the code by using list of shape
+List<Shape> shapes = new List<Shape>
             {
                 new Circle(),
                 new Rectangle(),

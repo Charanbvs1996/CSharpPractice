@@ -10,7 +10,7 @@ namespace CSharpOOPSPractice
     abstract class Shape
     {
         public abstract void CalculateArea();
-        public abstract string ShapeName { get; } //when declared abstarct, it must be implemented in derived class
+        public abstract string ShapeName { get; }
         public double GetUserInput(string input)
         {
 

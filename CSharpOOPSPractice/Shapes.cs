@@ -8,7 +8,7 @@ namespace CSharpOOPSPractice
 {
     class Shapes
     {
-        internal int GetUserInput(string input)
+        protected int GetUserInput(string input)
         {
             while (true)
             {

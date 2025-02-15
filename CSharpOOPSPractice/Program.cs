@@ -2,10 +2,17 @@
 
 #region "Challenge1: Implement Inheritance"
 
-Shape circle = new Circle();
-circle.CalculateArea();
-Shape rectangle = new Rectangle();
-rectangle.CalculateArea();
+List<Shape> shapes = new List<Shape>
+            {
+                new Circle(),
+                new Rectangle(),
+                new Triangle1()
+            };
+foreach (var shape in shapes)
+{
+    shape.CalculateArea();
+    Console.WriteLine(new string('-', 40)); // Separator line
+}
 
 #endregion
 

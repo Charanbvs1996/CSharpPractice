@@ -1,4 +1,4 @@
-﻿using MyLearningChallenges;
+﻿using CSharpBasicsPractice;
 
 using System;
 

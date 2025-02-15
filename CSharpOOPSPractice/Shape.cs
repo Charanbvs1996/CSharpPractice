@@ -48,9 +48,3 @@ namespace CSharpOOPSPractice
         }
     }
 }
-
-
-
-/*Shape provides shared functionality.
-Circle and Rectangle provide shape-specific behavior by overriding CalculateArea.
-The abstract class helps adhere to the DRY principle (Don't Repeat Yourself).*/
